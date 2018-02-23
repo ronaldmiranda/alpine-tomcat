@@ -30,5 +30,5 @@ RUN apk add --update curl &&\
   apk del curl &&\
   rm -rf /var/cache/apk/*
 
-
+ADD conf/tomcat-users.xml /opt/apache-tomcat-8.5.14/conf/tomcat-users.xml
 CMD ${CATALINA_HOME}/bin/catalina.sh run
